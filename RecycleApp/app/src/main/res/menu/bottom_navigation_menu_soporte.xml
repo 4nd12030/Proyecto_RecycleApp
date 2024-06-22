@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_roles_usuarios"
+        android:icon="@drawable/ic_category"
+        android:title="Roles"/>
+    <item
+        android:id="@+id/item_usuarios"
+        android:icon="@drawable/ic_list_usuarios"
+        android:title="Usuarios"/>
+
+    <item
+        android:id="@+id/item_list_ordenes"
+        android:icon="@drawable/ic_list"
+        android:title="Ordenes"/>
+
+    <item
+        android:id="@+id/item_clientes"
+        android:icon="@drawable/ic_clientes"
+        android:title="Clientes"/>
+    <item
+        android:id="@+id/item_perfil"
+        android:icon="@drawable/ic_person"
+        android:title="Perfil"/>
+
+</menu>

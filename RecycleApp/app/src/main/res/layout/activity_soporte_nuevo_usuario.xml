@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.soporte.add.SoporteNuevoUsuarioActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/brown_300"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Ingresa la informacion del nuevo cliente"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_nuevo_usuario"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/brown_300"
+            app:civ_border_width="5dp"
+            app:civ_circle_background_color="@color/brown_300" />
+
+        <EditText
+            android:id="@+id/edittxt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Nombre"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:padding="15dp"
+            tools:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittxt_apellido_pat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Apellido Paterno"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:padding="15dp"
+            tools:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittxt_apellido_mat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Apellido Materno"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:padding="15dp"
+            tools:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittxt_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Teléfono"
+            android:padding="15dp"
+            android:textColor="@color/brown_900"
+            android:textColorHint="@color/brown_900"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/edittxt_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Contrasena"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:text="Perfil:"/>
+
+        <Spinner
+            android:id="@+id/spinner_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_create_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

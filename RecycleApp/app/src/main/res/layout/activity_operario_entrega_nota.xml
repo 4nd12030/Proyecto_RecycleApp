@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.operario.update.OperarioEntregaNotaActivity">
+
+    <include layout="@layout/action_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/brown_500"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/brown_500" />
+        <!-- DATOS GENERALES-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Datos Generales"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="italic|bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/brown_500" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="No. de Orden: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/num_orden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Fecha: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fecha_nota"
+                    android:layout_width="136dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="DD/MM/AAAA"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Hora: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hora_nota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="00:00:00"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nombre del operario:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nombre_operario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nombre empleado operativo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="No. de Identificación: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_empleado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="00000"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/brown_500" />
+
+        <!-- CARACTERISTICAS PACAS-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Caracteristicas de las pacas"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="italic|bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/brown_500" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Número de pacas:"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/num_pacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:padding="5dp"
+                    android:text="00 Unidad(es)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Peso por paca: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/peso_paca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:text="00 Kilo(s)"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Peso total: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/peso_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:text="00 Kilo(s)"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Comentarios: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/comentarios_operario"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                   android:text="Sin comentarios"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/brown_500" />
+
+        <!-- DATOS CLIENTES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Datos del cliente"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="italic|bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/brown_500" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Razón Social: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nombre_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Razón Social: "
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Direccion: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/direccion_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="Direccion del cliente: "
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Costo por kilo:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/costo_x_kilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:padding="5dp"
+                    android:text="$00.00" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Costo total: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/costo_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="$00.00" />
+            </LinearLayout>
+
+        </LinearLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@color/brown_500" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="110dp"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:text="Asigno: "
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/asigna_cliente"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:padding="5dp"
+               android:text="Nombre de administrativo" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="70dp"
+           android:layout_gravity="bottom"
+           android:gravity="center">
+
+           <Button
+               android:id="@+id/btn_entrega"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:drawableRight="@drawable/ic_entregado"
+               android:text="Pacas entregadas"
+               android:textColor="@color/white"
+               android:textStyle="italic"
+               app:backgroundTint="@color/green_200" />
+
+           <Button
+               android:id="@+id/btn_cancelar"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:drawableRight="@drawable/ic_cancelar"
+               android:text="Cancelar nota"
+               android:textColor="@color/white"
+               android:textStyle="italic"
+               app:backgroundTint="@color/red" />
+       </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

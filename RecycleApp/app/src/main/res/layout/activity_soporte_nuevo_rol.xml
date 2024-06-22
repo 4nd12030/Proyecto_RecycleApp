@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.soporte.add.SoporteNuevoRolActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa los datos del nuevo Rol"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/brown_900"
+            />
+
+        <ImageView
+            android:id="@+id/image_view_rol"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/brown_100"
+            app:srcCompat="@drawable/ic_add_image" />
+
+
+        <EditText
+            android:id="@+id/edittxt_rol"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Nombre del rol"
+            android:padding="15dp"
+            tools:inputType="text" />
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_create_rol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Rol"
+        android:background="@drawable/rounded_button"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="65dp"
+        android:layout_gravity="bottom"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

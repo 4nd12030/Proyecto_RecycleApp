@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item_cliente_activos"
+        android:title=""
+        android:icon="@drawable/ic_clientes_activos"
+        app:showAsAction="always"/>
+    <item android:id="@+id/item_cliente_inactivos"
+        android:title=""
+        android:icon="@drawable/ic_cliente_inactivo"
+        app:showAsAction="always"/>
+    <!---
+    <item android:id="@+id/item_search"
+        android:title=""
+        android:icon="@drawable/ic_busqueda"
+        app:showAsAction="always"
+        android:visibility="gone"/>
+        -->
+    <item android:id="@+id/item_add"
+        android:title=""
+        android:icon="@drawable/ic_add_cliente"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,140 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="Registro"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Nombre(s)"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/editTextApePaterno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Apellido paterno"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/editTextApeMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Apellido materno"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/editTextTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Teléfono"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:inputType="phone"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/editTextIdEmpleado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Id empleado"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/editTextContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="Contraseña"
+            android:textColorHint="@color/brown_900"
+            android:textColor="@color/brown_900"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:orientation="vertical">
+
+        <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Registrarse" />
+
+        <ImageView
+        android:id="@+id/imgview_gologin"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Volver al login" />
+
+</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
